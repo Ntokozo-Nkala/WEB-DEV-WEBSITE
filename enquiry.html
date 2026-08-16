@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Enquiry - Stonebridge Industrial Contractors</title>
 </head>
 <body>
-    
+    <header class="navbar">
+<h3>Stonebridge Industrial Contractors</h3>
+
+<nav id="mainNav">
+<a href="index.html" class="nav-link">Home</a>
+<a href="about.html" class="nav-link">About</a>
+<a href="services.html" class="nav-link">Services</a>
+<a href="portfolio.html" class="nav-link">Portfolio</a>
+<a href="enquiry.html" class="nav-link">Enquiry</a>
+<a href="contact.html" class="nav-link">Contact</a>
+</nav>
+<a href="#contact" class="quote-btn">Get a Quote</a>
+</header>
+
+<section>
+<h2 class="contact-title">Send Us an Enquiry</h2>
+<form class="contact-form" id="contactForm" novalidate>
+<div class="form-status" id="formStatus"></div><br>
+<input type="text" placeholder="Your Name" name="name" id="nameInput" required>
+<span class="error-msg" id="nameError"></span>
+<input type="email" placeholder="Your Email" name="email" id="emailInput" required>
+<span class="error-msg" id="emailError"></span>
+<input type="text" placeholder="Subject" name="subject" id="subjectInput" required>
+<span class="error-msg" id="subjectError"></span>
+<textarea rows="6" placeholder="Your Message" name="message" id="messageInput" required></textarea>
+<span class="error-msg" id="messageError"></span><br>
+<button type="submit">Send Enquiry</button>
+</form>
+</section>
 </body>
 </html>
