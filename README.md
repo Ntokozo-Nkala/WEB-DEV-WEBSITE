@@ -53,3 +53,4 @@ safety and customer satisfaction. Our vision is to become a trusted and respecte
 - debugging of image src in projects.html
 - comments added to files
 - responssiveness tested
+- team members images added to about.html
