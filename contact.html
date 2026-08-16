@@ -7,7 +7,7 @@
 </head>
 <main>
     
-<!-- Header/nav bar - handles the navigation througout the website pages -->
+<!-- Header and nav bar - handles the navigation througout the website pages -->
 <header class="navbar">
 <h3>Stonebridge Industrial Contractors</h3>
 
@@ -22,6 +22,7 @@
 <a href="#contact" class="quote-btn">Get a Quote</a>
 </header>
 
+<!-- main content of the page -->
 <main>
 <section class="contact" id="contact">
 <div class="contact-info">
@@ -29,40 +30,46 @@
 <p>Ready to start your next construction or renovation project?</p>
 <div class="contact-box">
 <h4>Email</h4>
-<p><a href="mailto:info@stonebridgeindustrialcontractors.co.za" class="contact-link">info@stonebridgeindustrialcontractors.co.za</a></p>
+<p>info@stonebridgeindustrialcontractors.co.za</p>
 </div>
 <div class="contact-box">
 <h4>Phone</h4>
-<p><a href="tel:+27811234567" class="contact-link">+27 81 123 4567</a></p>
+<p>+27 81 123 4567</p>
 </div>
 </div>
 
+<!-- Contact form  -->
+ <form class="contact-form">
 <h2 class="contact-title"> Get in touch with us</h2>
-<form class="contact-form" id="contactForm" novalidate>
-<div class="form-status" id="formStatus"></div><br>
-<input type="text" placeholder="Your Name" name="name" id="nameInput" required>
-<span class="error-msg" id="nameError"></span>
-<input type="email" placeholder="Your Email" name="email" id="emailInput" required>
-<span class="error-msg" id="emailError"></span>
-<input type="text" placeholder="Subject" name="subject" id="subjectInput" required>
-<span class="error-msg" id="subjectError"></span>
-<textarea rows="6" placeholder="Your Message" name="message" id="messageInput" required></textarea>
-<span class="error-msg" id="messageError"></span><br>
-<button type="submit">Send Message</button>
-</form>
-</section>
+<fieldset>
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" required><br>
 
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br>
+
+  <label for="subject">Subject:</label><br>
+  <input type="text" id="subject" name="subject" required><br>
+
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message" rows="5" required></textarea>
+<br>
+  <button type="submit">Submit</button>
+</fieldset>
+ </form>
+
+
+<!-- Google Maps to show the locations of the company's branches -->
 <br>
 <div class="bloem-branch">
   <h3>View Our Location</h3>
-  <br>
   <h3>Bloemfontein Branch</h3>
   <iframe
     src="https://www.google.com/maps?q=142+Fritz+Stockenstrom+Street,+Bloemfontein,+South+Africa&output=embed" width="600" height="400">
   </iframe>
 </div>
 
-<div class="bloem-branch">
+<div class="kimberly-branch">
   <h3>Kimberly Branch</h3>
   <iframe
   src="https://www.google.com/maps?q=45+Du+Toitspan+Road,+Kimberley,+Northern+Cape,+South+Africa&output=embed" width="600" height="400">
@@ -70,6 +77,7 @@
 </div>
 </main>
 
+<!-- Footer section of contact page -->
 <footer>
 <p>© 2026 Stonebridge Industrial Contractors. All rights reserved.</p>
 </footer>
