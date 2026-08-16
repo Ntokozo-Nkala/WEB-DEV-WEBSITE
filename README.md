@@ -52,3 +52,4 @@ safety and customer satisfaction. Our vision is to become a trusted and respecte
 16-08-2026
 - debugging of image src in projects.html
 - comments added to files
+- responssiveness tested
