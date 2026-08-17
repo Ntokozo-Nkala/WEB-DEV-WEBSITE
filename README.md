@@ -110,10 +110,11 @@ Sitemap:
       |                      |                     |                      |                     |
       |                      |                     |                      |                     |
  Vision, Mission,          Various             Project images        Enquiry Form          Contact Form
- History                services offered      and descriptions                                  |
-                              |                     |                                  Contact Information
+ History                services offered      and descriptions            |                     |
+                              |                     |                    CTA             Contact Information
                      Client Testimonials     Client Testimonials                                |
-                                                                                    Location Embedded Maps                                                                                    
+                                                                                       Location Embedded Maps                                                                                                                           |
+                                                                                               CTA
 ```
 Reference List:
 
