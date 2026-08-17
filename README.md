@@ -12,6 +12,7 @@ ST10506449
 
 
 Project Overview:
+
 This project is a multi-page business website built for Stonebridge Industrial Contractors, a constraction and renovation company. The website showcases the company's services, projects and team members. It provides a way for potential clients to make enquiries or directly contact the company. It is built with HTML, CSS and Javascript.
 The first phase of website is currently being built with HTML only.
 
