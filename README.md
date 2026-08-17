@@ -96,14 +96,23 @@ Part 1 Details:
 * Contains embedded location maps for the company branches
 
 
-Sitemap: DIAGRAM NEEDED
- index.html - Home page
-  |----  about.html - About page
-  |----  services.html - Services page
-  |----  projects.html - Projects page
-  |----  contact.html - Contact page + form + maps
-  |_ ----  enquiry.html - Enquiry page + form
+Sitemap:
 
+                                               Home
+                                             index.html
+                                                |
+        ------------------------------------------------------------------------------------------
+        |                    |                     |                     |                       |
+      About               Services              Projects               Enquiry                Contact
+   about.html            services.html       projects.html           enquiry.html           contact.html
+      |                      |                     |                      |                     |
+      |                      |                     |                      |                     |
+ Vision, Mission,          Various             Project images        Enquiry Form          Contact Form
+ History                services offered      and descriptions                                  |
+                              |                     |                                  Contact Information
+                     Client Testimonials     Client Testimonials                                |
+                                                                                    Location Embedded Maps
+                                                                                    
 
 Reference List:
 
@@ -116,4 +125,3 @@ iStock, (n.d). Industrial contractor stock images [Images]. Available at: https:
 Kimme, T., 2026. Residential Contractors: Everything You Need to Know [Online] Contractors Today. Available at: https://www.contractorstoday.com/general-contractors-residential-contractors [Accessed 10 August 2026].
 
 Kimme, T., 2026. Industrial Contractors - A Comprehensive Overview  [Online] Contractors Today. Available at: https://www.contractorstoday.com/specialty-contractors-electrical-contractors [Accessed 10 August 2026].
-
