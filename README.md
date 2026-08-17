@@ -81,6 +81,10 @@ Changelog and Milestones:
 - team members images added to about.html
 - Debugging of files
 
+17-08-2026
+- Final revisions
+- debugging
+- submission
 
 Part 1 Details:
 * Built only with HTML
