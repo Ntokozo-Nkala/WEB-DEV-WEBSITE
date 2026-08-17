@@ -3,12 +3,16 @@ Stonebridge Industrial Contractors - Business Website
 
 
 Student Information:
+
 Mbali Ntokozo Nkala
+
 WEDE5020
+
 ST10506449
 
 
 Project Overview:
+
 This project is a multi-page business website built for Stonebridge Industrial Contractors, a constraction and renovation company. The website showcases the company's services, projects and team members. It provides a way for potential clients to make enquiries or directly contact the company. It is built with HTML, CSS and Javascript.
 The first phase of website is currently being built with HTML only.
 
@@ -24,7 +28,7 @@ Website Goals and Objectives:
 
 About the business: 
 
-Stonebridge Industrial Contractors (Pty) Ltd is a construction and renovation company 
+Stonebridge Industrial Contractors is a construction and renovation company 
 established in 2015 and based in Bloemfontein, Free State. The company provides residential 
 and commercial construction, renovations, extensions and roofing services. 
 Our mission is to deliver reliable, high-quality construction solutions while maintaining professional work ethic, 
@@ -78,6 +82,10 @@ Changelog and Milestones:
 - team members images added to about.html
 - Debugging of files
 
+17-08-2026
+- Final revisions
+- debugging
+- submission
 
 Part 1 Details:
 * Built only with HTML
@@ -99,7 +107,7 @@ Part 1 Details:
 
 
 Sitemap:
-```
+``````
                                                Home
                                              index.html
                                                  |
@@ -110,8 +118,8 @@ Sitemap:
       |                      |                     |                      |                     |
       |                      |                     |                      |                     |
  Vision, Mission,          Various             Project images        Enquiry Form          Contact Form
- History                services offered      and descriptions                                  |
-                              |                     |                                  Contact Information
+ History                services offered      and descriptions            |                     |
+                              |                     |                    CTA             Contact Information
                      Client Testimonials     Client Testimonials                                |
                                                                                     Location Embedded Maps
                                                                                     
