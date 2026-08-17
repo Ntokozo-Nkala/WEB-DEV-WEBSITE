@@ -13,6 +13,7 @@ This project is a multi-page business website built for Stonebridge Industrial C
 The first phase of website is currently being built with HTML only.
 
 
+<<<<<<< HEAD
 Website Goals and Objectives:
 * To present Stonebridge Industrial Contractors as a professional and trustworthy company.
 * Clearly outline the company's types of services
@@ -20,6 +21,15 @@ Website Goals and Objectives:
 * Build credibility and reliability through client testimonials and team information
 * Guide potential clients towards requesting a quote or contacting, using call-to-action
 * Ensuring easy and smooth navigation across the whole webiste
+=======
+======== About the business: =======
+
+Stonebridge Industrial Contractors (Pty) Ltd is a construction and renovation company 
+established in 2015 and based in Bloemfontein, Free State. The company provides residential 
+and commercial construction, renovations, extensions and roofing services. 
+Our mission is to deliver reliable, high-quality construction solutions while maintaining professional work ethic, 
+safety and customer satisfaction. Our vision is to become a trusted and respected construction company in South Africa.
+>>>>>>> cd54656eed9ebda64ab5c07cf1d969d3cf1d8428
 
 
 Key features and functionality:
@@ -66,6 +76,7 @@ Changelog and Milestones:
 - comments added to files
 - responssiveness tested
 - team members images added to about.html
+<<<<<<< HEAD
 - Debugging of files
 
 
@@ -109,3 +120,5 @@ Kimme, T., 2026. Residential Contractors: Everything You Need to Know [Online] C
 
 Kimme, T., 2026. Industrial Contractors - A Comprehensive Overview  [Online] Contractors Today. Available at: https://www.contractorstoday.com/specialty-contractors-electrical-contractors [Accessed 10 August 2026].
 
+=======
+>>>>>>> cd54656eed9ebda64ab5c07cf1d969d3cf1d8428
