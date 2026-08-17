@@ -96,7 +96,8 @@ Part 1 Details:
 * Contains embedded location maps for the company branches
 
 
-Sitemap: DIAGRAM NEEDED
+Sitemap:
+
  index.html - Home page
   |----  about.html - About page
   |----  services.html - Services page
