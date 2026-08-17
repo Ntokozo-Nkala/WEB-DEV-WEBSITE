@@ -27,7 +27,7 @@ Website Goals and Objectives:
 
 About the business: 
 
-Stonebridge Industrial Contractors (Pty) Ltd is a construction and renovation company 
+Stonebridge Industrial Contractors is a construction and renovation company 
 established in 2015 and based in Bloemfontein, Free State. The company provides residential 
 and commercial construction, renovations, extensions and roofing services. 
 Our mission is to deliver reliable, high-quality construction solutions while maintaining professional work ethic, 
