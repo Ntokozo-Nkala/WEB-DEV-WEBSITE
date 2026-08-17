@@ -5,6 +5,7 @@ The first phase of website is currently being built with HTML only.
 The website will build using HTML, CSS, and Javascript
 
 ======== About the business: =======
+
 Stonebridge Industrial Contractors (Pty) Ltd is a construction and renovation company 
 established in 2015 and based in Bloemfontein, Free State. The company provides residential 
 and commercial construction, renovations, extensions and roofing services. 
