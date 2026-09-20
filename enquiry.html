@@ -30,27 +30,44 @@
     
 <main class="container">
         <section class="contact">
-            <p class="section-tag">PROJECT ESTIMATOR</p>
+            <h3 class="section-tag">PROJECT ESTIMATOR</h3>
             <h2>Calculate Your <span>Project Cost</span></h2>
             <p>Select your service and area size to get an instant baseline estimate.</p>
-            <form class="contact-form" id="enquiryForm">
-                <input type="text" id="enquiry-name" placeholder="Your Full Name" required>
-                <input type="email" id="enquiry-email" placeholder="Your Email Address" required>
-                <label for="service-type">Service Required:</label>
-                <select id="service-type" required>
-                    <option value="">-- Select Service --</option>
-                    <option value="3500">Residential Renovation (R3,500 / m²)</option>
-                    <option value="5000">Commercial Build (R5,000 / m²)</option>
-                    <option value="2200">Interior Design (R2,200 / m²)</option>
-                </select>
-                <label for="project-size">Area Size (m²):</label>
-                <input type="number" id="project-size" min="5" placeholder="e.g. 80" required>
-                <button type="submit">Calculate &amp; Submit</button>
-            </form>
-            <div id="enquiryResult" class="contact-box" style="display:none; margin-top:20px;">
-                <h4>Estimated Cost Result</h4>
-                <p id="resultText"></p>
-            </div>
+            <form class="contact-form" id="enquiryForm" novalidate>
+                <div class="form-group">
+            <label for="enquiry-name">Full Name <span class="required">*</span></label>
+            <input type="text" id="enquiry-name" name="enquiry-name" placeholder="Sipho Siyothula">
+            <span class="error-msg" id="enquiry-name-error"></span>
+        </div>
+        <div class="form-group">
+            <label for="enquiry-email">Email Address <span class="required">*</span></label>
+            <input type="email" id="enquiry-email" name="enquiry-email" placeholder="sipho@example.com">
+            <span class="error-msg" id="enquiry-email-error"></span>
+        </div>
+               <div class="form-group">
+            <label for="service-type">Select Service <span class="required">*</span></label>
+            <select id="service-type" name="service-type">
+                <option value="">-- Choose a Service --</option>
+                <option value="4500">Building Construction (R4,500 / m²)</option>
+                <option value="3200">Full Renovation (R3,200 / m²)</option>
+                <option value="1800">Interior Design (R1,800 / m²)</option>
+                <option value="2500">Remodeling (R2,500 / m²)</option>
+            </select>
+            <span class="error-msg" id="service-type-error"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="project-size">Area Size (m²) <span class="required">*</span></label>
+            <input type="number" id="project-size" name="project-size" placeholder="e.g. 150" min="1">
+            <span class="error-msg" id="project-size-error"></span>
+        </div>
+        <button type="submit" class="submit-btn">Calculate Estimate</button>
+
+        <div id="enquiryResult" class="result-card" style="display: none;">
+            <h3>Estimate Summary</h3>
+            <p id="resultText"></p>
+        </div>
+    </form>
         </section>
 
 
@@ -77,17 +94,40 @@
 </div>
 
 <form class="contact-form" id="contactForm" novalidate>
-<div class="form-status" id="formStatus"></div>
-<input type="text" placeholder="Your Name" name="name" id="nameInput" required>
-<span class="error-msg" id="nameError"></span>
-<input type="email" placeholder="Your Email" name="email" id="emailInput" required>
-<span class="error-msg" id="emailError"></span>
-<input type="text" placeholder="Subject" name="subject" id="subjectInput" required>
-<span class="error-msg" id="subjectError"></span>
-<textarea rows="6" placeholder="Your Message" name="message" id="messageInput" required></textarea>
-<span class="error-msg" id="messageError"></span>
-<button type="submit">Send Message</button>
-</form>
+            <div class="form-status" id="formStatus" style="display: none;"></div>
+
+            <div class="form-group">
+                <label for="nameInput">Full Name <span class="required">*</span></label>
+                <input type="text" placeholder="Sipho Siyothula" name="name" id="nameInput" required>
+                <span class="error-msg" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="emailInput">Email Address <span class="required">*</span></label>
+                <input type="email" placeholder="sipho@example.com" name="email" id="emailInput" required>
+                <span class="error-msg" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="phoneInput">Phone Number <span class="required">*</span></label>
+                <input type="tel" placeholder="0811234567" name="phone" id="phoneInput" required>
+                <span class="error-msg" id="phoneError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="subjectInput">Subject <span class="required">*</span></label>
+                <input type="text" placeholder="Subject" name="subject" id="subjectInput" required>
+                <span class="error-msg" id="subjectError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="messageInput">Your Message <span class="required">*</span></label>
+                <textarea rows="6" placeholder="Tell us about your project..." name="message" id="messageInput" required></textarea>
+                <span class="error-msg" id="messageError"></span>
+            </div>
+
+            <button type="submit" id="sendEmailBtn">Send Message</button>
+        </form>
 </section>
     </main>
 

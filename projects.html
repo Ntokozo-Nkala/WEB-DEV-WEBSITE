@@ -27,19 +27,36 @@
     </header>
 
 <!-- Main content that shows their projects-->
-<main class="container">
-        <!-- Before & After Comparison -->
-        <section class="before-after">
-            <p class="section-tag center">THE DIFFERENCE</p>
-            <h2 class="section-title center">Before <span>&amp; After</span></h2>
+       <main class="container">
+    <!-- Before & After Comparison -->
+    <section class="before-after">
+        <p class="section-tag center">THE DIFFERENCE</p>
+        <h2 class="section-title center">Before <span>&amp; After</span></h2>
+        
+        <div class="comparison-container">
+            <!-- Before Image (Base Layer) -->
+            <img src="images/basic-bathroom.jpeg" class="before-image" alt="Bathroom before renovation">
             
-            <div class="comparison-container">
-                <img src="images/basic-bathroom.jpeg" class="before-image" alt="bathroom before renovation">
-                <div class="after-wrapper" id="afterWrapper">
-                    <img src="images/after-1.png" class="after-image" alt="bathroom after renovation">
-                </div>
-                <input type="range" min="0" max="100" value="50" id="slider" aria-label="Compare before and after">
+            <!-- After Image Overlay Layer -->
+            <div class="after-wrapper" id="afterWrapper">
+                <img src="images/after-1.png" class="after-image" alt="Bathroom after renovation">
             </div>
+
+            <!-- Visual Overlay Badges -->
+            <span class="slider-badge badge-before">Before</span>
+            <span class="slider-badge badge-after">After</span>
+
+            <!-- Interactive Range Control -->
+            <input type="range" min="0" max="100" value="50" id="slider" aria-label="Compare before and after bathroom renovation">
+
+            <!-- Visual Divider Line and Circular Handle -->
+            <div class="slider-handle" id="sliderHandle" aria-hidden="true">
+                <div class="handle-circle">
+                    <span class="arrow">&#10094;</span>
+                    <span class="arrow">&#10095;</span>
+                </div>
+            </div>
+        </div>
 
             <div class="gallery-grid">
                 <div class="gallery-pair">
@@ -61,44 +78,50 @@
         </section>
 
         <!-- Portfolio Filter Section -->
-        <section class="portfolio" id="portfolio">
-            <p class="section-tag center">OUR PROJECTS</p>
-            <h2 class="section-title center">Featured Work</h2>
-            
-            <div class="portfolio-filter">
-                <button class="filter-btn active" onclick="filterPortfolio('all')">All</button>
-                <button class="filter-btn" onclick="filterPortfolio('residential')">Residential</button>
-                <button class="filter-btn" onclick="filterPortfolio('commercial')">Commercial</button>
-                <button class="filter-btn" onclick="filterPortfolio('interior')">Interior</button>
-            </div>
+<section class="portfolio" id="portfolio">
+    <p class="section-tag center">OUR PROJECTS</p>
+    <h2 class="section-title center">Featured Work</h2>
+    
+    <div class="portfolio-controls">
+        <div class="portfolio-filter">
+            <button class="filter-btn active" onclick="filterPortfolio('all', event)">All</button>
+            <button class="filter-btn" onclick="filterPortfolio('residential', event)">Residential</button>
+            <button class="filter-btn" onclick="filterPortfolio('commercial', event)">Commercial</button>
+            <button class="filter-btn" onclick="filterPortfolio('interior', event)">Interior</button>
+        </div>
 
-            <div class="portfolio-grid">
-                <div class="portfolio-card residential">
-                    <img src="images/picture.png" alt="Luxury home renovation exterior" loading="lazy">
-                    <h3>Luxury Home Renovation</h3>
-                </div>
-                <div class="portfolio-card commercial">
-                    <img src="images/office-space.jpg" alt="Modern office interior" loading="lazy">
-                    <h3>Modern Office Space</h3>
-                </div>
-                <div class="portfolio-card interior">
-                    <img src="images/ater-2.png" alt="Renovated kitchen" loading="lazy">
-                    <h3>Kitchen Transformation</h3>
-                </div>
-                <div class="portfolio-card residential">
-                    <img src="images/home-extension.jpg" alt="Home extension build" loading="lazy">
-                    <h3>Family Home Extension</h3>
-                </div>
-                <div class="portfolio-card interior">
-                    <img src="images/bedroom-modefication.jpg" alt="Bedroom renovation" loading="lazy">
-                    <h3>Bedroom Renovation</h3>
-                </div>
-                <div class="portfolio-card interior">
-                    <img src="images/spa-bathroom.jpg" alt="Spa bathroom" loading="lazy">
-                    <h3>Spa-Style Bathroom</h3>
-                </div>
-            </div>
-        </section>
+        <div class="search-box">
+            <input type="text" id="portfolioSearch" placeholder="Search projects..." onkeyup="searchPortfolio()">
+        </div>
+    </div>
+
+    <div class="portfolio-grid">
+        <div class="portfolio-card residential">
+            <img src="images/picture.png" alt="Luxury home renovation exterior" loading="lazy">
+            <h3>Luxury Home Renovation</h3>
+        </div>
+        <div class="portfolio-card commercial">
+            <img src="images/office-space.jpg" alt="Modern office interior" loading="lazy">
+            <h3>Modern Office Space</h3>
+        </div>
+        <div class="portfolio-card interior">
+            <img src="images/ater-2.png" alt="Renovated kitchen" loading="lazy">
+            <h3>Kitchen Transformation</h3>
+        </div>
+        <div class="portfolio-card residential">
+            <img src="images/home-extension.jpg" alt="Home extension build" loading="lazy">
+            <h3>Family Home Extension</h3>
+        </div>
+        <div class="portfolio-card interior">
+            <img src="images/bedroom-modefication.jpg" alt="Bedroom renovation" loading="lazy">
+            <h3>Bedroom Renovation</h3>
+        </div>
+        <div class="portfolio-card interior">
+            <img src="images/spa-bathroom.jpg" alt="Spa bathroom" loading="lazy">
+            <h3>Spa-Style Bathroom</h3>
+        </div>
+    </div>
+</section>
     </main>
 
 
@@ -112,7 +135,7 @@
 <div class="client">
 <img src="images/thandiwe.jpg" alt="Thandiwe M." loading="lazy">
 <div>
-<h4>Thandiwe M.</h4>
+<p>Thandiwe M.</p>
 <span>Kitchen Renovation, Cape Town</span>
 </div>
 </div>
@@ -122,7 +145,7 @@
 <div class="client">
 <img src="images/johan.jpg" alt="Johan V." loading="lazy">
 <div>
-<h4>Johan V.</h4>
+<p>Johan V.</p>
 <span>Commercial Build, Stellenbosch</span>
 </div>
 </div>
@@ -132,7 +155,7 @@
 <div class="client">
 <img src="images/aisha.jpg" alt="Aisha K." loading="lazy">
 <div>
-<h4>Aisha K.</h4>
+<p>Aisha K.</p>
 <span>Bathroom Remodel, Paarl</span>
 </div>
 </div>

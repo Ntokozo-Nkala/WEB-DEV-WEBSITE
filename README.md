@@ -15,6 +15,7 @@ Project Overview:
 
 This project is a multi-page business website built for Stonebridge Industrial Contractors, a constraction and renovation company. The website showcases the company's services, projects and team members. It provides a way for potential clients to make enquiries or directly contact the company. It is built with HTML, CSS and Javascript.
 The first phase of website is currently being built with HTML only.
+The second phase which is the POE, has CSS and JavaScript.
 
 
 Website Goals and Objectives:
@@ -87,6 +88,35 @@ Changelog and Milestones:
 - debugging
 - submission
 
+08-09-2026
+- Created style.css file and linked to all HTML pages
+- Added CSS reset, color scheme variables, and base typography 
+
+09-09-2026
+- Applied CSS layouts for desktop views across main sections
+- Applied visual styles, rounded corners, box-shadows, and hover effects
+
+11-09-2026
+- Implemented media query breakpoints for tablet and mobile devices
+- Replaced fixed dimensions with relative units (rem, em, %) for fluid scaling
+- Styled responsive navigation drawer layout
+
+12-09-2026
+- Created script.js and linked to all pages
+- Implemented mobile menu toggle functionality
+- Built interactive project cost estimator script on enquiry.html, similar to a basic js calculator
+- Implemented portfolio category filtering on projects.html
+
+15-09-2026
+- Debugging of the enquiry.html quotation calculator 
+- debugging the layout and animations of all the html pages
+
+18-09-2026
+- Tested layout and scripts across desktop, tablet, and mobile views
+- Final code cleanup and submission preparation
+- Final Submissin of the POE
+
+
 Part 1 Details:
 * Built only with HTML
 * Page structures all have the following elements
@@ -94,7 +124,7 @@ Part 1 Details:
    - nav
    - main
    - section
-   - div 
+   - div
    - footer
    - img
    - h1
@@ -104,6 +134,18 @@ Part 1 Details:
 * All relevant information are in the relevant files
 * Addition of contact forms and contact information
 * Contains embedded location maps for the company branches
+
+Part 2  and Part 3 (POE) Details:
+* CSS and JavaScript added to the basic HTML pages
+* The POE does/contains the following:
+- Hover effects/ animations
+- SEO, Meta keywords
+- SEO, Meta Descriptions
+- Desktop, tablet and mobile responsiveness
+- Search feature in the projects page
+- Google interactive maps
+- Gallery lightbox feature in the projects and about us pages
+
 
 
 Sitemap:
