@@ -14,32 +14,20 @@
 <!-- Header and nav bar - handles the navigation througout the website pages -->
 <header class="navbar">
     <img class="logo" src="images/stonebridge-logo.png" alt="Stonebridge Logo" width="100" height="100">
-<nav id="mainNav">
-<a href="index.html" class="nav-link">Home</a>
-<a href="about.html" class="nav-link">About</a>
-<a href="services.html" class="nav-link">Services</a>
-<a href="projects.html" class="nav-link">Portfolio</a>
-<a href="enquiry.html" class="nav-link">Enquiry</a>
-<a href="contact.html" class="nav-link">Contact</a>
-</nav>
-<button>
-<a href="contact.html" class="quote-btn">Get a Quote</a>
-<button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"></button>
-</button>
+    <div class="menu-wrapper">
+        <button class="mobile-toggle" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+        <nav id="mainNav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="projects.html" class="nav-link">Portfolio</a>
+            <a href="enquiry.html" class="nav-link">Enquiry</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+    </div>
+
+    <a href="contact.html" class="quote-btn">Get a Quote</a>
 </header>
-
-
-<div class="mobile-menu" id="mobileMenu">
-<a href="index.html" class="mobile-nav-link">Home</a>
-<a href="about.html" class="mobile-nav-link">About</a>
-<a href="services.html" class="mobile-nav-link">Services</a>
-<a href="portfolio.html" class="mobile-nav-link">Portfolio</a>
-<a href="testimonials.html" class="mobile-nav-link">Testimonials</a>
-<a href="contact.html" class="mobile-nav-link">Contact</a>
-<a href="contact.html" class="quote-btn mobile-quote-btn">Get a Quote</a>
-</div>
-<div class="menu-overlay" id="menuOverlay"></div>
-
 
 <!-- Main content of homepage and call-to-action buttons -->
 <main>
@@ -96,8 +84,7 @@
 <div class="about-content">
 <p class="section-tag">ABOUT US</p>
 <h2>
-Crafting Spaces That
-<span>Inspire</span>
+Crafting Spaces That<span>Inspire</span>
 </h2>
 <p>Stonebridge Industrial Contractors is a premier construction and renovation company dedicated to transforming residential and commercial spaces.</p>
 <div class="features">
@@ -111,43 +98,6 @@ Crafting Spaces That
 </div>
 </section>
 
-
-<section class="contact" id="contact">
-<div class="contact-info">
-<p class="section-tag">GET IN TOUCH</p>
-<h2>Let's Build<span>Together</span></h2>
-<p>Ready to start your next construction or renovation project?</p>
-<div class="contact-box">
-<h4>Email</h4>
-<p class="contact-link">info@stonebridgeindustrialcontractors.co.za</p>
-</div>
-<div class="contact-box">
-<h4>Phone</h4>
-<p><a href="tel:+27811234567" class="contact-link">+27 81 123 4567</a></p>
-</div>
-<div class="contact-box">
-<h4>Follow Us</h4>
-<div class="social-links">
-<a href="#" aria-label="Facebook">Facebook</a>
-<a href="#" aria-label="Instagram">Instagram</a>
-<a href="#" aria-label="LinkedIn">LinkedIn</a>
-</div>
-</div>
-</div>
-
-<form class="contact-form" id="contactForm" novalidate>
-<div class="form-status" id="formStatus"></div>
-<input type="text" placeholder="Your Name" name="name" id="nameInput" required>
-<span class="error-msg" id="nameError"></span>
-<input type="email" placeholder="Your Email" name="email" id="emailInput" required>
-<span class="error-msg" id="emailError"></span>
-<input type="text" placeholder="Subject" name="subject" id="subjectInput" required>
-<span class="error-msg" id="subjectError"></span>
-<textarea rows="6" placeholder="Your Message" name="message" id="messageInput" required></textarea>
-<span class="error-msg" id="messageError"></span>
-<button type="submit">Send Message</button>
-</form>
-</section>
 
 
 <!-- Footer of the homepage -->

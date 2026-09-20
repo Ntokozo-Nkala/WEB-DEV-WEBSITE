@@ -13,111 +13,96 @@
 
 <!-- Header and nav bar - handles the navigation througout the website pages -->
     <header class="navbar">
-    <img src="images/stonebridge-logo.png" alt="Stonebridge Logo" width="100" height="100">
-<nav id="mainNav">
-<a href="index.html" class="nav-link">Home</a>
-<a href="about.html" class="nav-link">About</a>
-<a href="services.html" class="nav-link">Services</a>
-<a href="projects.html" class="nav-link">Portfolio</a>
-<a href="enquiry.html" class="nav-link">Enquiry</a>
-<a href="contact.html" class="nav-link">Contact</a>
-</nav>
-<button>
-<a href="contact.html" class="quote-btn">Get a Quote</a>
-</button>
-</header>
+        <img src="images/stonebridge-logo.png" alt="Stonebridge Logo" width="100" height="100">
+        <button class="mobile-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">☰</button>
+        <nav id="mainNav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="projects.html" class="nav-link">Portfolio</a>
+            <a href="enquiry.html" class="nav-link">Enquiry</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <a href="contact.html" class="quote-btn">Get a Quote</a>
+    </header>
 
 <!-- Main content that shows their projects-->
-<section class="before-after">
-<p class="section-tag center">THE DIFFERENCE</p>
-<h2 class="section-title center">
-      Before <span>&amp; After</span>
-</h2>
-<div class="comparison-container">
-<img src="images/basic-bathroom.jpeg" class="before-image" alt="before renovation">
-<div class="after-wrapper" id="afterWrapper">
-<img src="images/after-1.png" class="after-image" alt="after renovation">
-</div>
-<input type="range" min="0" max="100" value="50" id="slider" aria-label="Drag to compare before and after">
-<div class="slider-handle" id="sliderHandle">⇔</div>
-</div>
+<main class="container">
+        <!-- Before & After Comparison -->
+        <section class="before-after">
+            <p class="section-tag center">THE DIFFERENCE</p>
+            <h2 class="section-title center">Before <span>&amp; After</span></h2>
+            
+            <div class="comparison-container">
+                <img src="images/basic-bathroom.jpeg" class="before-image" alt="bathroom before renovation">
+                <div class="after-wrapper" id="afterWrapper">
+                    <img src="images/after-1.png" class="after-image" alt="bathroom after renovation">
+                </div>
+                <input type="range" min="0" max="100" value="50" id="slider" aria-label="Compare before and after">
+            </div>
 
-<div class="gallery-grid">
-<div class="gallery-pair">
-<img src="images/basic-kitchen.png" alt="kitchen before renovation" loading="lazy">
-<img src="images/ater-2.png" alt="kitchen after renovation" loading="lazy">
-<p class="gallery-label">Kitchen Remodel</p>
-</div>
-<div class="gallery-pair">
-<img src="images/bathroom-reno.png" alt="bathroom before renovation" loading="lazy">
-<img src="images/reno-bathroom.png" alt="bathroom after renovation" loading="lazy">
-<p class="gallery-label">Bathroom Remodel</p>
-</div>
-<div class="gallery-pair">
-<img src="images/basic-livingroom.png" alt="living room before renovation" loading="lazy">
-<img src="images/reno-livingroom.png" alt="living room after renovation" loading="lazy">
-<p class="gallery-label">Living Room Remodel</p>
-</div>
-</div>
-</section>
+            <div class="gallery-grid">
+                <div class="gallery-pair">
+                    <img src="images/basic-kitchen.png" alt="kitchen before renovation" loading="lazy">
+                    <img src="images/ater-2.png" alt="kitchen after renovation" loading="lazy">
+                    <p class="gallery-label">Kitchen Remodel</p>
+                </div>
+                <div class="gallery-pair">
+                    <img src="images/bathroom-reno.png" alt="bathroom before renovation" loading="lazy">
+                    <img src="images/reno-bathroom.png" alt="bathroom after renovation" loading="lazy">
+                    <p class="gallery-label">Bathroom Remodel</p>
+                </div>
+                <div class="gallery-pair">
+                    <img src="images/basic-livingroom.png" alt="living room before renovation" loading="lazy">
+                    <img src="images/reno-livingroom.png" alt="living room after renovation" loading="lazy">
+                    <p class="gallery-label">Living Room Remodel</p>
+                </div>
+            </div>
+        </section>
 
-<section class="portfolio" id="portfolio">
-<p class="section-tag center">OUR PROJECTS</p>
-<h2 class="section-title center">
-    Featured Work
-</h2>
-<div class="portfolio-filter">
-<button class="filter-btn active" data-filter="all">All</button>
-<button class="filter-btn" data-filter="residential">Residential</button>
-<button class="filter-btn" data-filter="commercial">Commercial</button>
-<button class="filter-btn" data-filter="interior">Interior</button>
-</div>
-<div class="portfolio-grid">
-<div class="portfolio-card" data-category="residential">
-<img src="images/picture.png" alt="Luxury home renovation exterior" loading="lazy">
-<div class="portfolio-overlay">
-<h3>Luxury Home Renovation</h3>
-<p>Residential</p>
-</div>
-</div>
-<div class="portfolio-card" data-category="commercial">
-<img src="images/office-space.jpg" alt="Modern office interior" loading="lazy">
-<div class="portfolio-overlay">
-<h3>Modern Office Space</h3>
-<p>Commercial</p>
-</div>
-</div>
-<div class="portfolio-card" data-category="interior">
-<img src="images/ater-2.png" alt="Renovated kitchen with navy cabinetry" loading="lazy">
-<div class="portfolio-overlay">
-<h3>Kitchen Transformation</h3>
-<p>Interior</p>
-</div>
-</div>
-<div class="portfolio-card" data-category="residential">
-<img src="images/home-extension.jpg" alt="Home extension build" loading="lazy">
-<div class="portfolio-overlay">
-<h3>Family Home Extension</h3>
-<p>Residential</p>
-</div>
-</div>
-<div class="portfolio-card" data-category="commercial">
-<img src="images/bedroom-modefication.jpg" alt="Retail store fit-out" loading="lazy">
-<div class="portfolio-overlay">
-<h3>Bedroom Renovation</h3>
-<p>Interior</p>
-</div>
-</div>
-<div class="portfolio-card" data-category="interior">
-<img src="images/spa-bathroom.jpg" alt="Renovated bathroom" loading="lazy">
-<div class="portfolio-overlay">
-<h3>Spa-Style Bathroom</h3>
-<p>Interior</p>
-</div>
-</div>
-</div>
-</section>
+        <!-- Portfolio Filter Section -->
+        <section class="portfolio" id="portfolio">
+            <p class="section-tag center">OUR PROJECTS</p>
+            <h2 class="section-title center">Featured Work</h2>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" onclick="filterPortfolio('all')">All</button>
+                <button class="filter-btn" onclick="filterPortfolio('residential')">Residential</button>
+                <button class="filter-btn" onclick="filterPortfolio('commercial')">Commercial</button>
+                <button class="filter-btn" onclick="filterPortfolio('interior')">Interior</button>
+            </div>
 
+            <div class="portfolio-grid">
+                <div class="portfolio-card residential">
+                    <img src="images/picture.png" alt="Luxury home renovation exterior" loading="lazy">
+                    <h3>Luxury Home Renovation</h3>
+                </div>
+                <div class="portfolio-card commercial">
+                    <img src="images/office-space.jpg" alt="Modern office interior" loading="lazy">
+                    <h3>Modern Office Space</h3>
+                </div>
+                <div class="portfolio-card interior">
+                    <img src="images/ater-2.png" alt="Renovated kitchen" loading="lazy">
+                    <h3>Kitchen Transformation</h3>
+                </div>
+                <div class="portfolio-card residential">
+                    <img src="images/home-extension.jpg" alt="Home extension build" loading="lazy">
+                    <h3>Family Home Extension</h3>
+                </div>
+                <div class="portfolio-card interior">
+                    <img src="images/bedroom-modefication.jpg" alt="Bedroom renovation" loading="lazy">
+                    <h3>Bedroom Renovation</h3>
+                </div>
+                <div class="portfolio-card interior">
+                    <img src="images/spa-bathroom.jpg" alt="Spa bathroom" loading="lazy">
+                    <h3>Spa-Style Bathroom</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    
 <section class="testimonials" id="testimonials">
 <p class="section-tag center">CLIENT STORIES</p>
 <h2 class="section-title center"> What Our <span>Clients Say</span></h2>

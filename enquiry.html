@@ -13,19 +13,45 @@
 
 <!-- Header and nav bar - handles the navigation througout the website pages -->
 <header class="navbar">
-    <img src="images/stonebridge-logo.png" alt="Stonebridge Logo" width="100" height="100">
-<nav id="mainNav">
-<a href="index.html" class="nav-link">Home</a>
-<a href="about.html" class="nav-link">About</a>
-<a href="services.html" class="nav-link">Services</a>
-<a href="projects.html" class="nav-link">Portfolio</a>
-<a href="enquiry.html" class="nav-link">Enquiry</a>
-<a href="contact.html" class="nav-link">Contact</a>
-</nav>
-<button>
-<a href="contact.html" class="quote-btn">Get a Quote</a>
-</button>
-</header>
+        <img src="images/stonebridge-logo.png" alt="Stonebridge Logo" width="100" height="100">
+        <button class="mobile-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">☰</button>
+        <nav id="mainNav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="projects.html" class="nav-link">Portfolio</a>
+            <a href="enquiry.html" class="nav-link">Enquiry</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <a href="contact.html" class="quote-btn">Get a Quote</a>
+    </header>
+
+
+    
+<main class="container">
+        <section class="contact">
+            <p class="section-tag">PROJECT ESTIMATOR</p>
+            <h2>Calculate Your <span>Project Cost</span></h2>
+            <p>Select your service and area size to get an instant baseline estimate.</p>
+            <form class="contact-form" id="enquiryForm">
+                <input type="text" id="enquiry-name" placeholder="Your Full Name" required>
+                <input type="email" id="enquiry-email" placeholder="Your Email Address" required>
+                <label for="service-type">Service Required:</label>
+                <select id="service-type" required>
+                    <option value="">-- Select Service --</option>
+                    <option value="3500">Residential Renovation (R3,500 / m²)</option>
+                    <option value="5000">Commercial Build (R5,000 / m²)</option>
+                    <option value="2200">Interior Design (R2,200 / m²)</option>
+                </select>
+                <label for="project-size">Area Size (m²):</label>
+                <input type="number" id="project-size" min="5" placeholder="e.g. 80" required>
+                <button type="submit">Calculate &amp; Submit</button>
+            </form>
+            <div id="enquiryResult" class="contact-box" style="display:none; margin-top:20px;">
+                <h4>Estimated Cost Result</h4>
+                <p id="resultText"></p>
+            </div>
+        </section>
 
 
 <section class="contact" id="contact">
@@ -63,6 +89,7 @@
 <button type="submit">Send Message</button>
 </form>
 </section>
+    </main>
 
 <!-- Footer of the enquiry page -->
 <footer>
@@ -79,11 +106,11 @@
 
 <div>
 <h4>Quick Links</h4>
-<a href="#">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#portfolio">Portfolio</a>
-<a href="#contact">Contact</a>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="contact.html">Contact</a>
 </div>
 
 <div>
