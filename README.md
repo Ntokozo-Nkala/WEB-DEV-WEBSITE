@@ -138,7 +138,7 @@ Part 1 Details:
 Part 2  and Part 3 (POE) Details:
 * CSS and JavaScript added to the basic HTML pages
 * The POE does/contains the following:
-- Hover effects/ animations
+- Hover effects/ pop up animations
 - SEO, Meta keywords
 - SEO, Meta Descriptions
 - Desktop, tablet and mobile responsiveness
@@ -177,3 +177,9 @@ iStock, (n.d). Industrial contractor stock images [Images]. Available at: https:
 Kimme, T., 2026. Residential Contractors: Everything You Need to Know [Online] Contractors Today. Available at: https://www.contractorstoday.com/general-contractors-residential-contractors [Accessed 10 August 2026].
 
 Kimme, T., 2026. Industrial Contractors - A Comprehensive Overview  [Online] Contractors Today. Available at: https://www.contractorstoday.com/specialty-contractors-electrical-contractors [Accessed 10 August 2026].
+
+W3Schools, (n.d.) JavaScript HTML DOM. Available at: https://www.w3schools.com/js/js_htmldom.asp [Accessed: 11 September 2026].
+
+W3Schools, (n.d.) CSS Interactive Pseudo-classes. Available at: https://www.w3schools.com/Css/css_pseudo_classes_interactive.asp (Accessed: 12 September 2026).
+
+W3Schools, (n.d.) CSS z-index Property. Available at: https://www.w3schools.com/css/css_z-index.asp (Accessed: 12 September 2026).
