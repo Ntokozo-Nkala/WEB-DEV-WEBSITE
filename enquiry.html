@@ -1,167 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Stonebridge Industrial Contractors provides premium residential and commercial construction, renovations, and extensions in Bloemfontein and Kimberly.">
-    <meta name="keywords" content="construction, renovations, commercial building, home extensions, Stonebridge, Bloemfontein contractors">
-    <meta name="author" content="Stonebridge Industrial Contractors">
-    <title>Enquiry | Stonebridge Industrial Contractors</title>
-    <link rel="stylesheet" href="css/style.css">
+     <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes site responsive on mobile -->
+    <meta name="description" content="Stonebridge Industrial Contractors provides premium residential and commercial construction, renovations, and extensions in Bloemfontein and Kimberly."> <!-- SEO description -->
+    <meta name="keywords" content="construction, renovations, commercial building, home extensions, Stonebridge, Bloemfontein contractors"> <!-- SEO keywords -->
+    <meta name="author" content="Stonebridge Industrial Contractors"> <!-- Author info -->
+    <title>Enquiry | Stonebridge Industrial Contractors</title> <!-- Page title -->
+    <link rel="stylesheet" href="css/style.css"> <!-- External CSS -->
 </head>
 <body>
 
-<!-- Header and nav bar - handles the navigation througout the website pages -->
-<header class="navbar">
-        <img src="images/stonebridge-logo.png" alt="Stonebridge Logo" width="100" height="100">
-        <button class="mobile-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">☰</button>
-        <nav id="mainNav">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link">About</a>
-            <a href="services.html" class="nav-link">Services</a>
-            <a href="projects.html" class="nav-link">Portfolio</a>
-            <a href="enquiry.html" class="nav-link">Enquiry</a>
-            <a href="contact.html" class="nav-link">Contact</a>
+    <!-- Header and nav bar - handles the navigation througout the website pages -->
+<header class="navbar"> <!-- Navigation bar -->
+        <img src="images/stonebridge-logo.png" alt="Stonebridge Logo" width="100" height="100"> <!-- Company logo -->
+        <button class="mobile-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">☰</button> <!-- Mobile hamburger button -->
+        <nav id="mainNav"> <!-- Navigation links -->
+            <a href="index.html" class="nav-link">Home</a> <!-- Home link -->
+            <a href="about.html" class="nav-link">About</a> <!-- About link -->
+            <a href="services.html" class="nav-link">Services</a> <!-- Services link -->
+            <a href="projects.html" class="nav-link">Portfolio</a> <!-- Portfolio link -->
+            <a href="enquiry.html" class="nav-link">Enquiry</a> <!-- Enquiry link -->
+            <a href="contact.html" class="nav-link">Contact</a> <!-- Contact link -->
         </nav>
-        <a href="contact.html" class="quote-btn">Get a Quote</a>
+        <a href="contact.html" class="quote-btn">Get a Quote</a> <!-- CTA button -->
     </header>
 
 
     
-<main class="container">
-        <section class="contact">
-            <h3 class="section-tag">PROJECT ESTIMATOR</h3>
-            <h2>Calculate Your <span>Project Cost</span></h2>
-            <p>Select your service and area size to get an instant baseline estimate.</p>
-            <form class="contact-form" id="enquiryForm" novalidate>
-                <div class="form-group">
-            <label for="enquiry-name">Full Name <span class="required">*</span></label>
-            <input type="text" id="enquiry-name" name="enquiry-name" placeholder="Sipho Siyothula">
-            <span class="error-msg" id="enquiry-name-error"></span>
+<main class="container"> <!-- Main container -->
+        <section class="contact"> <!-- Project estimator section -->
+            <h3 class="section-tag">PROJECT ESTIMATOR</h3> <!-- Section label -->
+            <h2>Calculate Your <span>Project Cost</span></h2> <!-- Heading -->
+            <p>Select your service and area size to get an instant baseline estimate.</p> <!-- Intro text -->
+            <form class="contact-form" id="enquiryForm" novalidate> <!-- Estimator form -->
+                <div class="form-group"> <!-- Name field -->
+            <label for="enquiry-name">Full Name <span class="required">*</span></label> <!-- Label -->
+            <input type="text" id="enquiry-name" name="enquiry-name" placeholder="Sipho Siyothula"> <!-- Input -->
+            <span class="error-msg" id="enquiry-name-error"></span> <!-- Error message -->
         </div>
-        <div class="form-group">
-            <label for="enquiry-email">Email Address <span class="required">*</span></label>
-            <input type="email" id="enquiry-email" name="enquiry-email" placeholder="sipho@example.com">
-            <span class="error-msg" id="enquiry-email-error"></span>
+        <div class="form-group"> <!-- Email field -->
+            <label for="enquiry-email">Email Address <span class="required">*</span></label> <!-- Label -->
+            <input type="email" id="enquiry-email" name="enquiry-email" placeholder="sipho@example.com"> <!-- Input -->
+            <span class="error-msg" id="enquiry-email-error"></span> <!-- Error message -->
         </div>
-               <div class="form-group">
-            <label for="service-type">Select Service <span class="required">*</span></label>
-            <select id="service-type" name="service-type">
-                <option value="">-- Choose a Service --</option>
-                <option value="4500">Building Construction (R4,500 / m²)</option>
-                <option value="3200">Full Renovation (R3,200 / m²)</option>
-                <option value="1800">Interior Design (R1,800 / m²)</option>
-                <option value="2500">Remodeling (R2,500 / m²)</option>
+               <div class="form-group"> <!-- Service dropdown -->
+            <label for="service-type">Select Service <span class="required">*</span></label> <!-- Label -->
+            <select id="service-type" name="service-type"> <!-- Dropdown -->
+                <option value="">-- Choose a Service --</option> <!-- Default option -->
+                <option value="4500">Building Construction (R4,500 / m²)</option> <!-- Option -->
+                <option value="3200">Full Renovation (R3,200 / m²)</option> <!-- Option -->
+                <option value="1800">Interior Design (R1,800 / m²)</option> <!-- Option -->
+                <option value="2500">Remodeling (R2,500 / m²)</option> <!-- Option -->
             </select>
-            <span class="error-msg" id="service-type-error"></span>
+            <span class="error-msg" id="service-type-error"></span> <!-- Error message -->
         </div>
 
-        <div class="form-group">
-            <label for="project-size">Area Size (m²) <span class="required">*</span></label>
-            <input type="number" id="project-size" name="project-size" placeholder="e.g. 150" min="1">
-            <span class="error-msg" id="project-size-error"></span>
+        <div class="form-group"> <!-- Project size field -->
+            <label for="project-size">Area Size (m²) <span class="required">*</span></label> <!-- Label -->
+            <input type="number" id="project-size" name="project-size" placeholder="e.g. 150" min="1"> <!-- Input -->
+            <span class="error-msg" id="project-size-error"></span> <!-- Error message -->
         </div>
-        <button type="submit" class="submit-btn">Calculate Estimate</button>
+        <button type="submit" class="submit-btn">Calculate Estimate</button> <!-- Submit button -->
 
-        <div id="enquiryResult" class="result-card" style="display: none;">
-            <h3>Estimate Summary</h3>
-            <p id="resultText"></p>
+        <div id="enquiryResult" class="result-card" style="display: none;"> <!-- Result card -->
+            <h3>Estimate Summary</h3> <!-- Result heading -->
+            <p id="resultText"></p> <!-- Result text -->
         </div>
     </form>
         </section>
 
 
-<section class="contact" id="contact">
-<div class="contact-info">
-<p class="section-tag">GET IN TOUCH</p>
-<h2>Let's Build<span>Together</span></h2>
-<p>Ready to start your next construction or renovation project?</p>
-<div class="contact-box">
-<h4>Email</h4>
-<p class="contact-link">info@stonebridgeindustrialcontractors.co.za</p>
-<div class="contact-box">
-<h4>Phone</h4>
-<p><a href="tel:+27811234567" class="contact-link">+27 81 123 4567</a></p>
+<section class="contact" id="contact"> <!-- Contact section -->
+<div class="contact-info"> <!-- Contact info block -->
+<p class="section-tag">GET IN TOUCH</p> <!-- Section label -->
+<h2>Let's Build<span>Together</span></h2> <!-- Heading -->
+<p>Ready to start your next construction or renovation project?</p> <!-- Intro text -->
+<div class="contact-box"> <!-- Email box -->
+<h4>Email</h4> <!-- Label -->
+<p class="contact-link">info@stonebridgeindustrialcontractors.co.za</p> <!-- Email -->
+<div class="contact-box"> <!-- Phone box -->
+<h4>Phone</h4> <!-- Label -->
+<p><a href="tel:+27811234567" class="contact-link">+27 81 123 4567</a></p> <!-- Phone link -->
 </div>
-<div class="contact-box">
-<h4>Follow Us</h4>
-<div class="social-links">
-<a href="#" aria-label="Facebook">Facebook</a>
-<a href="#" aria-label="Instagram">Instagram</a>
-<a href="#" aria-label="LinkedIn">LinkedIn</a>
+<div class="contact-box"> <!-- Social links box -->
+<h4>Follow Us</h4> <!-- Label -->
+<div class="social-links"> <!-- Social links container -->
+<a href="#" aria-label="Facebook">Facebook</a> <!-- Facebook link -->
+<a href="#" aria-label="Instagram">Instagram</a> <!-- Instagram link -->
+<a href="#" aria-label="LinkedIn">LinkedIn</a> <!-- LinkedIn link -->
 </div>
 </div>
 </div>
 
-<form class="contact-form" id="contactForm" novalidate>
-            <div class="form-status" id="formStatus" style="display: none;"></div>
+<form class="contact-form" id="contactForm" novalidate> <!-- Contact form -->
+            <div class="form-status" id="formStatus" style="display: none;"></div> <!-- Form status -->
 
-            <div class="form-group">
-                <label for="nameInput">Full Name <span class="required">*</span></label>
-                <input type="text" placeholder="Sipho Siyothula" name="name" id="nameInput" required>
-                <span class="error-msg" id="nameError"></span>
+            <div class="form-group"> <!-- Name field -->
+                <label for="nameInput">Full Name <span class="required">*</span></label> <!-- Label -->
+                <input type="text" placeholder="Sipho Siyothula" name="name" id="nameInput" required> <!-- Input -->
+                <span class="error-msg" id="nameError"></span> <!-- Error message -->
             </div>
 
-            <div class="form-group">
-                <label for="emailInput">Email Address <span class="required">*</span></label>
-                <input type="email" placeholder="sipho@example.com" name="email" id="emailInput" required>
-                <span class="error-msg" id="emailError"></span>
+            <div class="form-group"> <!-- Email field -->
+                <label for="emailInput">Email Address <span class="required">*</span></label> <!-- Label -->
+                <input type="email" placeholder="sipho@example.com" name="email" id="emailInput" required> <!-- Input -->
+                <span class="error-msg" id="emailError"></span> <!-- Error message -->
             </div>
 
-            <div class="form-group">
-                <label for="phoneInput">Phone Number <span class="required">*</span></label>
-                <input type="tel" placeholder="0811234567" name="phone" id="phoneInput" required>
-                <span class="error-msg" id="phoneError"></span>
+            <div class="form-group"> <!-- Phone field -->
+                <label for="phoneInput">Phone Number <span class="required">*</span></label> <!-- Label -->
+                <input type="tel" placeholder="0811234567" name="phone" id="phoneInput" required> <!-- Input -->
+                <span class="error-msg" id="phoneError"></span> <!-- Error message -->
             </div>
 
-            <div class="form-group">
-                <label for="subjectInput">Subject <span class="required">*</span></label>
-                <input type="text" placeholder="Subject" name="subject" id="subjectInput" required>
-                <span class="error-msg" id="subjectError"></span>
+            <div class="form-group"> <!-- Subject field -->
+                <label for="subjectInput">Subject <span class="required">*</span></label> <!-- Label -->
+                <input type="text" placeholder="Subject" name="subject" id="subjectInput" required> <!-- Input -->
+                <span class="error-msg" id="subjectError"></span> <!-- Error message -->
             </div>
 
-            <div class="form-group">
-                <label for="messageInput">Your Message <span class="required">*</span></label>
-                <textarea rows="6" placeholder="Tell us about your project..." name="message" id="messageInput" required></textarea>
-                <span class="error-msg" id="messageError"></span>
+            <div class="form-group"> <!-- Message field -->
+                <label for="messageInput">Your Message <span class="required">*</span></label> <!-- Label -->
+                <textarea rows="6" placeholder="Tell us about your project..." name="message" id="messageInput" required></textarea> <!-- Textarea -->
+                <span class="error-msg" id="messageError"></span> <!-- Error message -->
             </div>
 
-            <button type="submit" id="sendEmailBtn">Send Message</button>
+            <button type="submit" id="sendEmailBtn">Send Message</button> <!-- Submit button -->
         </form>
 </section>
-    </main>
+    </main> <!-- End of main -->
+
 
 <!-- Footer of the enquiry page -->
-<footer>
-<div class="footer-content">
-<div>
-<h3>Stonebridge Industrial Contractors</h3>
-<p>Building excellence through innovation, quality craftsmanship and unmatched dedication.</p>
-<div class="social-links footer-social">
-<a href="#" aria-label="Facebook">Facebook</a>
-<a href="#" aria-label="Instagram">Instagram</a>
-<a href="#" aria-label="LinkedIn">LinkedIn</a>
+<footer> <!-- Footer section starts -->
+<div class="footer-content"> <!-- Wrapper for all footer content -->
+
+<div> <!-- Company info block -->
+<h3>Stonebridge Industrial Contractors</h3> <!-- Company name -->
+<p>Building excellence through innovation, quality craftsmanship and unmatched dedication.</p> <!-- Company tagline -->
+<div class="social-links footer-social"> <!-- Social media links container -->
+<a href="#" aria-label="Facebook">Facebook</a> <!-- Facebook link, but doesnt lead to the platform, the company does not YET social media, it is in progress-->
+<a href="#" aria-label="Instagram">Instagram</a> <!-- Instagram link, but doesnt lead to the platform, the company does not YET social media, it is in progress -->
+<a href="#" aria-label="LinkedIn">LinkedIn</a> <!-- LinkedIn link, but doesnt lead to the platform, the company does not YET social media, it is in progress -->
 </div>
 </div>
 
-<div>
-<h4>Quick Links</h4>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="contact.html">Contact</a>
+<div> <!-- Quick navigation links block -->
+<h4>Quick Links</h4> <!-- Section heading -->
+<a href="#">Home</a> <!-- Link to homepage -->
+<a href="#about">About</a> <!-- Link to about section -->
+<a href="#services">Services</a> <!-- Link to services section -->
+<a href="#portfolio">Portfolio</a> <!-- Link to portfolio section -->
+<a href="#contact">Contact</a> <!-- Link to contact section -->
 </div>
 
-<div>
-<h4>Contact</h4>
-<a href="mailto:info@stonebridgeindustrialcontractors.co.za">info@stonebridgeindustrialcontractors.co.za</a>
-<a href="tel:+27811234567">+27 81 123 4567</a>
-</div>
-</div>
+<div> <!-- Contact details block -->
+<h4>Contact</h4> <!-- Section heading -->
+<a href="mailto:info@stonebridgeindustrialcontractors.co.za">info@stonebridgeindustrialcontractors.co.za</a> <!-- Email link -->
+<a href="tel:+27811234567">+27 81 123 4567</a> <!-- Phone link -->
+</div><!-- Contact details div closes -->
+</div> <!-- Footer content wrapper closes -->
 
-<p>© 2026 Stonebridge Industrial Contractors. All rights reserved.</p>
-</footer>
-<script src="js/script.js"></script>
+<p>© 2026 Stonebridge Industrial Contractors. All rights reserved.</p> <!-- Copyright notice -->
+</footer> <!-- Footer section ends -->
+
+<script src="js/script.js"></script> <!-- Link to the JavaScript file -->
+
 </body>
 </html>
